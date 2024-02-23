@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: rgb(222, 222, 222);
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+body {
+  /* display: grid; */
+  display: flex;
+
+  flex-direction: column;
+
+  /* 
+  align-items: center; */
+}
+p {
+  max-width: 40em;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  /* max-width: 20rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Make container expand all the way from top to bottom of page*/
+  margin: 5em 0;
+  margin-bottom: 5em;
+}
+
+#header-profile-image {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Page Background */
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/chopper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: blur(50px); /* Apply a blur effect to the background container */
+  position: fixed;
+  z-index: -1; /* Ensure the background container is behind other content */
+}
+
+a,
+.link {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* border: 2px; */
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  /* color: rgba(0, 0, 0, 0.5); */
+  /* background-color: transparent; */
+  width: 40vw;
+  height: 6vh;
+  border-radius: 10px;
+  margin: 5px 0;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover,
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#link-to-linktree {
+}
+
+#username {
+  margin: 1em 0 0.5em;
+}
